@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>NAVA</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+	 	<link rel="shortcut icon" href="images/logo.png">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- Open sans fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+		<!-- Raleway fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<!--font-awesome-->
+		<script src="https://kit.fontawesome.com/c8e4d183c2.js" ></script>
+
+		<!--jquery.min-->
+		<script src="js/jquery-3.5.1.min.js"></script>
+
+		<!-- COUNTER PLUGINS -->
+		<script src="js/jquery.rcounter.js"></script>
+		<script src="js/jquery.waypoints.min.js" charset="utf-8"></script>
+
+		<!--Form validation-->
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/additional-methods.min.js"></script>
+
+		<!--sweet alert-->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+		<link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+
+		<!-- slick-slider -->
+
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="js/slick.min.js"></script>
+
+		 <!--accordian-->
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="css/jquery-ui.css">
+
+		<!--social media icons-->
+
+		<link rel="stylesheet" href="css/social-share.css">
+		<script src="js/jquery.floating-social-share.js"></script>
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- ANIMATION PLUGIN -->
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	</head>
+
+	<body>
+		<!-- page-loader -->
+
+		<div class="page-loader"></div>
+
+		<header class="featured-boats-header">
+
+			<section class="main-header">
+				<div class="main-container">
+
+					<!-- Main navigation bar -->
+
+					<div class="navigation-bar">
+						<!-- logo -->
+						<div>
+							<a href="index.html">
+								<img src="images/nava-logo.png" alt="logo">
+							</a>
+						</div>
+
+						<nav>
+							<ul>
+								<li>
+									<a href="index.html">HOME</a>
+								</li>
+								<li>
+									<a href="about.html">ABOUT US</a>
+								</li>
+								<li>
+									<a href="top-destinations.html">TOP DESTINATIONS</a>
+								</li>
+								<li>
+									<a href="add-your-boat.html">ADD YOUR BOAT</a>
+								</li>
+								<li>
+									<a href="featured-boats.html">FEATURED BOATS</a>
+								</li>
+								<li>
+									<a href="gallery.html">GALLERY</a>
+								</li>
+								<li>
+									<a href="#" class="sign-up-btn">SIGN UP</a>
+								</li>
+
+							</ul>
+						</nav>
+					</div>
+
+
+				</div>
+			</section>
+		</header>
+
+		<main class="featured-boats-main">
+
+			<section>
+				<div class="container">
+
+					<div class="filter-box">
+
+						<select id="type">
+							<option disabled selected value="">Type</option>
+							<option value="delphia">Delphia</option>
+							<option value="senses">Senses</option>
+							<option value="cruiser">Cruiser</option>
+						</select>
+
+						<select id="duration">
+							<option disabled selected value="">Duration</option>
+							<option value="3days">3 Days</option>
+							<option value="5days">5 Days</option>
+							<option value="7days">7 Days</option>
+						</select>
+
+						<select id="persons" name="adults">
+							<option disabled selected value="">Persons</option>
+							<option value="5">5</option>
+							<option value="8">8</option>
+							<option value="10">10</option>
+						</select>
+
+						<div>
+							<button type="button" id="search" data-type='' data-duration='' data-persons=''>
+								SEARCH
+							</button>
+						</div>
+					</div>
+
+
+					<div class="country" id="monaco">
+						<h2>Monaco</h2>
+							<div class="sorry-mesg">Sorry , currently no boats available..</div>
+							<div class="img-box">
+								<img src="images/delphia.jpg" alt="featured-boats" data-value='cruiser-3days-5'>
+								<img src="images/crusier2.png" alt="featured-boats" data-value='cruiser-3days-10'>
+								<img src="images/crusier.png" alt="featured-boats" data-value='senses-5days-8'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='delphia-5days-8'>
+								<img src="images/crusier2.png" alt="featured-boats" data-value='delphia-3days-5'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='cruiser-7days-5'>
+								<img src="images/crusier.png" alt="featured-boats" data-value='senses-3days-10'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='senses-7days-10'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='cruiser-5days-5'>
+								<img src="images/gallery-image-4.jpg" alt="featured-boats" data-value='cruiser-5days-5'>
+								<img src="images/gallery-image-5.jpg" alt="featured-boats" data-value='senses-7days-10'>
+								<img src="images/gallery-image-3.jpg" alt="featured-boats" data-value='delphia-5days-8'>
+
+							</div>
+					</div>
+
+					<div class="country" id="italy">
+						<h2>Italy</h2>
+							<div class="sorry-mesg">Sorry , currently no boats available..</div>
+							<div class="img-box">
+								<img src="images/delphia.jpg" alt="featured-boats" data-value='cruiser-7days-8'>
+								<img src="images/crusier2.png" alt="featured-boats" data-value='delphia-5days-8'>
+								<img src="images/crusier.png" alt="featured-boats" data-value='senses-7days-10'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='delphia-3days-5'>
+								<img src="images/gallery-image-1.jpg" alt="featured-boats" data-value='cruiser-5days-5'>
+								<img src="images/gallery-image-2.jpg" alt="featured-boats" data-value='senses-7days-10'>
+								<img src="images/gallery-image-5.jpg" alt="featured-boats" data-value='delphia-5days-8'>
+								<img src="images/crusier2.png" alt="featured-boats" data-value='delphia-3days-10'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='cruiser-5days-5'>
+								<img src="images/crusier.png" alt="featured-boats" data-value='senses-5days-5'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='senses-7days-8'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='cruiser-3days-10'>
+							</div>
+					</div>
+
+					<div class="country" id="spain">
+						<h2>Spain</h2>
+							<div class="sorry-mesg">Sorry , currently no boats available..</div>
+							<div class="img-box">
+								<img src="images/delphia.jpg" alt="featured-boats" data-value='cruiser-5days-8'>
+								<img src="images/crusier2.png" alt="featured-boats" data-value='cruiser-7days-10'>
+								<img src="images/crusier.png" alt="featured-boats" data-value='senses-3days-10'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='delphia-5days-5'>
+								<img src="images/crusier2.png" alt="featured-boats" data-value='delphia-5days-8'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='cruiser-5days-8'>
+								<img src="images/sense-4.jpg" alt="featured-boats" data-value='senses-7days-10'>
+								<img src="images/gallery-image-1.jpg" alt="featured-boats" data-value='cruiser-5days-5'>
+								<img src="images/gallery-image-6.jpg" alt="featured-boats" data-value='senses-7days-10'>
+								<img src="images/gallery-image-2.jpg" alt="featured-boats" data-value='delphia-5days-8'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='senses-3days-5'>
+								<img src="images/sense-5.jpg" alt="featured-boats" data-value='cruiser-7days-8'>
+							</div>
+					</div>
+
+					<div class="country" id="portugal">
+						<h2>Portugal</h2>
+							<div class="sorry-mesg">Sorry , currently no boats available..</div>
+							<div class="img-box">
+								<img src="images/delphia.jpg" alt="featured-boats" data-value='cruiser-7days-8'>
+								<img src="images/crusier2.png" alt="featured-boats" data-value='cruiser-5days-10'>
+								<img src="images/sense-4.jpg" alt="featured-boats" data-value='senses-3days-10'>
+								<img src="images/delphia-2.jpg" alt="featured-boats" data-value='delphia-3days-5'>
+								<img src="images/crusier2.png" alt="featured-boats" data-value='delphia-3days-5'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='cruiser-5days-5'>
+								<img src="images/crusier2.png" alt="featured-boats" data-value='cruiser-5days-5'>
+								<img src="images/gallery-image-5.jpg" alt="featured-boats" data-value='senses-7days-10'>
+								<img src="images/delphia-6.jpg" alt="featured-boats" data-value='delphia-5days-8'>
+								<img src="images/crusier.png" alt="featured-boats" data-value='senses-5days-10'>
+								<img src="images/delphia.png" alt="featured-boats" data-value='delphia-5days-8'>
+								<img src="images/sense-3.jpg" alt="featured-boats" data-value='cruiser-7days-5'>
+							</div>
+					</div>
+
+				</div>
+			</section>
+
+			 <div class="side-sign-up">
+			        <!--cancel-btn--------------->
+			        <a href="#" class="sign-up-cancel-btn">
+			            <i class="fas fa-times"></i>
+			        </a>
+
+			        <!--heading-------->
+			        <h2>Sign Up</h2>
+			    <!--form------------------------>
+			        <form  class="form1">
+			            <!--password---->
+			            <label>Full Name<samp>*</samp></label>
+			            <div class="name">
+			                <i class="far fa-copy"></i>
+			                <input type="text" name="fullname" required>
+			            </div>
+			            <!--email---->
+			            <label>Email<samp>*</samp></label>
+			            <div class="email">
+			                <i class="far fa-paper-plane"></i>
+			                <input type="email" name="email" required>
+			            </div>
+			            <!--password---->
+			            <label>Password<samp>*</samp></label>
+			            <div class="password">
+			                <i class="fas fa-lock"></i>
+			                <input type="password" name="password" required>
+			            </div>
+			            
+			            <!--login-btn-->
+			            <input type="submit" name="login" class="sign-up" value="Sign Up">
+			        </form>
+       			</div>
+
+		</main>
+
+		<footer>
+			<section class="footer-section">
+				<div class="container">
+
+					<div class="flex-parent">
+						<div>
+							<h2>Top Locations </h2>
+							<ul>
+								<li>
+									<a href="top-destinations.html#spain-destination">Spain</a>
+								</li>
+								<li>
+									<a href="top-destinations.html#Portugal-destination">Portugal</a>
+								</li>
+								<li>
+									<a href="top-destinations.html#italy-destination">Italy</a>
+								</li>
+								<li>
+									<a href="top-destinations.html#monaco-destination">Monaco</a>
+								</li>
+							</ul>
+						</div>
+
+						<div>
+							<h2>At your service </h2>
+							<ul>
+								<li>
+									Monday - Friday	08:00 - 22:00
+								</li>
+								<li>
+									Saturday & Sunday 08:00 - 22:00
+								</li>
+							</ul>
+						</div>
+
+						<div>
+							<h2>Subscribe to our newsletter </h2>
+
+							<form class="form" id="form">
+								<div>
+									<input type="email" name="email" placeholder="your email address">
+									<!-- <span>  subscribe </span> -->
+									<input type="submit" value="Subscribe">
+								</div>
+							</form>
+
+							<div class="social-media-icons">
+								<a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.png" alt="facebook" title="facebook"></a>
+								<a href="https://www.twitter.com/" target="_blank"><img src="images/twitter-icon.png" alt="twitter" title="twitter"></a>
+								<a href="https://www.google.com/" target="_blank"><img src="images/google-icon.png" alt="google" title="google"></a>
+							</div>
+						</div>
+
+						<div>
+							<h2>Contact us </h2>
+							<address>
+								<span>166 G/5, Block 3, PECHS, Karachi, Sindh 75400, Pakistan</span><br>
+								<label>Call now </label>
+								<a href="tel:+02134557174"> 021 34557174 </a><br>
+								<label>Email: </label>
+								<a href="mailto:info@consulnet.net">info@consulnet.net</a>
+							</address>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</footer>
+
+
+		<script src="js/script.js"></script>
+	</body>
+
+</html>
